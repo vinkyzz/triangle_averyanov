@@ -1,13 +1,11 @@
-# Дано нечетное натуральное число n.
-# Напишите фунцию, которая печатает равнобедренный звездный треугольник с основанием,
-# равным n в соответствии с примером:
-# *
-# **
-# ***
-# ****
-# ***
-# **
-# *
+import math
 
-def triangle():
-    pass
+def triangle(n):
+    num_strr = math.ceil(n / 2)
+
+    for i in range(1, num_strr + 1):
+        print(i * '*')
+    for j in range(num_strr - 1, 0, -1):
+        print(j * '*')
+
+triangle(3) 
